@@ -1,0 +1,10 @@
+common:
+  database: "sqlite:///./database/db.sqlite"
+  prefix: export/
+  format: csv
+
+exports:
+
+  - query: "select * from phone_metadata order by rowid"
+    filename: "csv/results.csv"
+    format: csv
